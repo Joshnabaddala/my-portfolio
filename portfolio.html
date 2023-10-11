@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>JHOSHNA-portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e8d849699d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                 <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li> 
+                 </ul>
+                 <h1>JHOSHNA's PORTFOLIO</h1>
+                 <!--<img src="Pictures/images/logo (1).png" width="300px" height="300px">//-->
+                </nav>
+                <img align="right" src="Pictures/images/logo (1).png" width="300px" height="300px">
+                <div class="header-text">
+                    <h4>Web Developer</h4>
+                    <h1>Hi, I'm <span>Jhoshna</span><br>Baddala from India</h1>
+
+                </div>
+            </div>
+        </div>
+        <!-- --------About------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Pictures/images/j1.png">
+                    </div>
+                    <div class="about-col-1">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm JHOSHNA BADDALA from India.
+                            I'm currently pursuing B.tech final year
+                             at siddharth institutions of engineering and technology .
+                             As a final year student with skills in web development.
+                             Iam excited to leverage my skills and knowledge to
+                             contribute to the field of web development.
+                             I'm also interested in video editing and social marketing.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('internships')">Internships</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-end development</span><br>Html,css,javascript</li>
+                                <li><span>Back-end development</span><br>java</li>
+                                <li><span>Video editing</span><br>editing videos</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="internships">
+                            <ul>
+                                <li><span>Java internship</span><br>from Internpe</li>
+                                <li><span>Web development internship</span><br>from Yhills</li>
+                                <li><span>Python course</span><br>from Simplilearn</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-current</span><br>B.tech at siddharth institutions of engineering and technology</li>
+                                <li><span>2018-2020</span><br>Intermediate at Sri chaitanya junior college</li>
+                                <li><span>2012-2018</span><br>up to 10th at AP Residential school kammanapalli</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- -------portfolio------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Pictures/images/sa.jpg">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Dowload it from play store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Pictures/images/ma.jpg">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Dowload it from play store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Pictures/images/oa.jpg">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Dowload it from play store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        </script>
+        
+    </body>
+</html>
